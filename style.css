@@ -40,6 +40,10 @@ h1 {
     font-weight: 700;
 }
 
+main {
+    height: 65vh;
+}
+
 
 @media (min-width: 576px) {
     .container {

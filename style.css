@@ -41,9 +41,79 @@ h1 {
 }
 
 main {
-    height: 65vh;
+    min-height: 65vh;
+    background: url("res/images/bg-triangle.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50% auto;
 }
 
+main .icon {
+    box-shadow: inset 10px 5px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    height:210px;
+    width:210px;
+    border-radius: 50%;
+}
+
+main #rock {
+    background: radial-gradient(circle at top, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+    height:250px;
+    width:250px;
+    border-radius: 50%;
+    box-shadow: 5px 5px hsl(349,67%,40%);
+    margin-top:50%;
+    margin-left:-60%;
+}
+
+main #rock .icon {
+    background-image: url("res/images/icon-rock.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50% auto;
+}
+
+main #paper {
+    background: radial-gradient(circle at top, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+    height:250px;
+    width:250px;
+    border-radius: 50%;
+    box-shadow: 5px 5px hsl(230,55%,44%);
+    margin-right:30%;
+    margin-left:5%;
+}
+
+main #paper .icon {
+    background-image: url("res/images/icon-paper.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50% auto;
+}
+
+main #scissors {
+    background: radial-gradient(circle at top, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+    height:250px;
+    width:250px;
+    border-radius: 50%;
+    box-shadow: 5px 5px hsl(39,90%,37%);
+}
+
+main #scissors .icon {
+    background-image: url("res/images/icon-scissors.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50% auto;
+}
+
+footer button {
+    border-radius:10px;
+    border: solid 2px white;
+    background-color: transparent;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 600;
+    color:white;
+    font-size: 1.5em;
+}
 
 @media (min-width: 576px) {
     .container {
@@ -86,5 +156,9 @@ main {
         font-size: 3em;
         color:white;
         text-transform: uppercase;
+    }
+
+    main.container {
+        width:calc(1366px * 0.66);
     }
 }
